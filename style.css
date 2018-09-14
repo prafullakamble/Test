@@ -1,16 +1,44 @@
-body {
+jumbotronbody {
   font-family: 'Raleway', sans-serif;
   background: rgba(242, 242, 242, .6);
+  margin: 0;
+}
+
+.jumbotron {
+  font-family: 'Raleway', sans-serif;
+  background: rgba(0,0,0,0.75);
   margin: 0;
 }
 
 * {
   box-sizing: border-box
 }
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+i{
+font-family: 'Courgette', cursive;
+}
+li{
+padding-bottom:8px;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin-top:60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.48;
+}
 
 /*NAVBAR*/
 .navbar {
-  background-color: #31b0d5;
+  background-color: black;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -49,6 +77,7 @@ body {
   color: white;
   text-align: center;
   padding-top: 150px;
+  overflow:hidden;
 }
 
 .jumbotron-text h1 {
@@ -76,7 +105,7 @@ body {
 
 .social {
   font-size: 2em;
-  color: white;
+  color: black;
   padding: 20px;
 }
 
@@ -145,6 +174,7 @@ h2 {
 .content-body {
   line-height: 1.5;
   color: rgba(0,0,0,.75);
+  font-size:1.2rem
 }
 
 /*EDUCATION*/
@@ -155,6 +185,7 @@ h2 {
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
   margin-bottom: 30px;
+  font-size: 1.3rem;
 }
 
 .card-header {
@@ -163,11 +194,14 @@ h2 {
   border-bottom: 1px solid rgba(0,0,0,.075);
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
+
 }
 
 .card-content {
   padding: .25rem 1.25rem;
   flex: 1 1 auto;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.88), 0 3px 6px rgba(0,0,0,0.15);
 }
 
 h4 {
@@ -188,7 +222,7 @@ h4 {
   border: 1px solid rgba(0,0,0,.125);
   border-radius: 5px;
   margin-bottom: 30px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.88), 0 3px 6px rgba(0,0,0,0.15);
 }
 
 .project-image {
@@ -199,11 +233,15 @@ h4 {
   display: block;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  padding-left:20px;
+  padding-top:20px;
 }
 
 .project-content {
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 1.10rem;
+  font-size: 1.3em;
+
 
   display: flex;
   justify-content: center;
@@ -214,6 +252,7 @@ h4 {
 .ul-skills {
   text-align: center;
   padding-left: 0;
+
 }
 
 .li-skills {
@@ -225,7 +264,13 @@ h4 {
   list-style: none;
   cursor: default;
   font-size: 1.2em;
+  border-radius: 20px;
 }
+li img {
+    height: 20px;
+    width: 20px;
+}
+
 
 /*CONTACT*/
 .blue {
@@ -270,6 +315,3 @@ h4 {
   transition: .5s ease all;
 }
 
-.white-text {
-  color: white;
-}
