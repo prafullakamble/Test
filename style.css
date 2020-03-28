@@ -266,6 +266,8 @@ h4 {
   cursor: default;
   font-size: 1.2em;
   border-radius: 20px;
+  min-width: 160px;
+
 }
 li img {
     height: 20px;
